@@ -21,7 +21,14 @@ printX(0, 5)
 function sum(n) {
     let total =  0;
     for (let i = 0; i < n+1; i++) {
-        total += n;
+        total += i;
     }
     return total;
+}
+
+function sumR(n) {
+    if(n == 1) {
+        return 1;
+    }
+    return n+sumR(n-1);
 }
